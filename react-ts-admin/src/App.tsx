@@ -1,11 +1,9 @@
 import './App.css'
 import { QueryClient, QueryClientProvider, } from '@tanstack/react-query'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
-import DefaultLayout from './layouts/DefaultLayout';
+import DefaultLayout from './components/layouts/DefaultLayout';
 import DashBoardPage from './modules/dashboard/DashBoardPage';
 import NotFoundPage from './modules/notfound/NotFoundPage';
-import EmptyLayout from './layouts/EmptyLayout';
-import LoginPage from './modules/auth/LoginPage';
 import ProductsPage from './modules/products/ProductsPage';
 import TablesPage from './modules/tables/TablesPage';
 import ReportsPage from './modules/reports/ReportsPage';
