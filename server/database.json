@@ -4,73 +4,85 @@
             "id": 1,
             "name": "Há cáo tôm",
             "price": 49000,
-            "thumbnail": "/uploads/ha-cao-tom.jpg"
+            "thumbnail": "/uploads/ha-cao-tom.jpg",
+            "isAvailable": true
         },
         {
             "id": 2,
             "name": "Há cảo sò điệp",
             "price": 49000,
-            "thumbnail": "/uploads/ha-cao-so-diep.jpg"
+            "thumbnail": "/uploads/ha-cao-so-diep.jpg",
+            "isAvailable": true
         },
         {
             "id": 3,
             "name": "Xíu mại đông cô",
             "price": 49000,
-            "thumbnail": "/uploads/xiu-mai-dong-co.jpg"
+            "thumbnail": "/uploads/xiu-mai-dong-co.jpg",
+            "isAvailable": true
         },
         {
             "id": 4,
             "name": "Chân gà hấp tàu xì",
             "price": 49000,
-            "thumbnail": "/uploads/chan-ga-hap.jpg"
+            "thumbnail": "/uploads/chan-ga-hap.jpg",
+            "isAvailable": true
         },
         {
             "id": 5,
             "name": "Bánh bao phong sa",
             "price": 55000,
-            "thumbnail": "/uploads/banh-bao-phong-sa.jpg"
+            "thumbnail": "/uploads/banh-bao-phong-sa.jpg",
+            "isAvailable": true
         },
         {
             "id": 6,
             "name": "Tôm bắp viên chiên",
             "price": 55000,
-            "thumbnail": "/uploads/tom-bap-vien-chien.jpg"
+            "thumbnail": "/uploads/tom-bap-vien-chien.jpg",
+            "isAvailable": true
         },
         {
             "id": 7,
             "name": "Xôi gà lá sen",
             "price": 55000,
-            "thumbnail": "/uploads/xoi-ga-la-sen.jpg"
+            "thumbnail": "/uploads/xoi-ga-la-sen.jpg",
+            "isAvailable": true
         },
         {
             "id": 8,
             "name": "Tàu hủ ky chiên tôm",
             "price": 49000,
-            "thumbnail": "/uploads/tau-hu-ky-chien-tom.jpg"
+            "thumbnail": "/uploads/tau-hu-ky-chien-tom.jpg",
+            "isAvailable": true
         },
         {
             "id": 9,
             "name": "Tàu hủ ky dầu hào",
             "price": 45000,
-            "thumbnail": "/uploads/tau-hu-ky-dau-hao.jpg"
+            "thumbnail": "/uploads/tau-hu-ky-dau-hao.jpg",
+            "isAvailable": true
         },
         {
             "id": 10,
             "name": "Bánh bao xá xíu",
             "price": 55000,
-            "thumbnail": "/uploads/banh-bao-xa-xiu.jpg"
+            "thumbnail": "/uploads/banh-bao-xa-xiu.jpg",
+            "isAvailable": true
         },
         {
             "id": 11,
             "name": "Tôm chiên mayonnaise",
             "price": 55000,
-            "thumbnail": "/uploads/tom-chien-mayonnaise.jpg"
+            "thumbnail": "/uploads/tom-chien-mayonnaise.jpg",
+            "isAvailable": true
         },
         {
             "id": 12,
             "name": "Xôi xá xíu",
             "price": 50000,
-            "thumbnail": "/uploads/xoi-xa-xiu.jpg"
+            "thumbnail": "/uploads/xoi-xa-xiu.jpg",
+            "isAvailable": true
         }
     ],
     "noodles": [
@@ -78,55 +90,64 @@
             "id": 1,
             "name": "Mì xá xíu khô",
             "price": 49000,
-            "thumbnail": "/uploads/mi-xa-xiu-kho.jpg"
+            "thumbnail": "/uploads/mi-xa-xiu-kho.jpg",
+            "isAvailable": true
         },
         {
             "id": 2,
             "name": "Mì bò cay",
             "price": 59000,
-            "thumbnail": "/uploads/mi-bo-cay.jpg"
+            "thumbnail": "/uploads/mi-bo-cay.jpg",
+            "isAvailable": true
         },
         {
             "id": 3,
             "name": "Mì thập cẩm khô",
             "price": 65000,
-            "thumbnail": "/uploads/mi-thap-cam-kho.jpg"
+            "thumbnail": "/uploads/mi-thap-cam-kho.jpg",
+            "isAvailable": true
         },
         {
             "id": 4,
             "name": "Mì sủi cảo nước",
             "price": 49000,
-            "thumbnail": "/uploads/mi-sui-cao-nuoc.jpg"
+            "thumbnail": "/uploads/mi-sui-cao-nuoc.jpg",
+            "isAvailable": true
         },
         {
             "id": 5,
             "name": "Mì xá xíu nước",
             "price": 49000,
-            "thumbnail": "/uploads/mi-xa-xiu-nuoc.jpg"
+            "thumbnail": "/uploads/mi-xa-xiu-nuoc.jpg",
+            "isAvailable": true
         },
         {
             "id": 6,
             "name": "Mì thập cẩm nước",
             "price": 60000,
-            "thumbnail": "/uploads/mi-thap-cam-nuoc.jpg"
+            "thumbnail": "/uploads/mi-thap-cam-nuoc.jpg",
+            "isAvailable": true
         },
         {
             "id": 7,
             "name": "Mì tôm tươi khô",
             "price": 49000,
-            "thumbnail": "/uploads/mi-tom-tuoi-kho.jpg"
+            "thumbnail": "/uploads/mi-tom-tuoi-kho.jpg",
+            "isAvailable": true
         },
         {
             "id": 8,
             "name": "Mì gà xé khô",
             "price": 49000,
-            "thumbnail": "/uploads/mi-ga-xe-kho.jpg"
+            "thumbnail": "/uploads/mi-ga-xe-kho.jpg",
+            "isAvailable": true
         },
         {
             "id": 9,
             "name": "Mì thêm",
             "price": 12000,
-            "thumbnail": "/uploads/mi-them.jpg"
+            "thumbnail": "/uploads/mi-them.jpg",
+            "isAvailable": true
         }
     ],
     "rice": [
@@ -134,31 +155,36 @@
             "id": 1,
             "name": "Cơm gà luộc Hải Nam",
             "price": 65000,
-            "thumbnail": "/uploads/com-ga-luoc-hai-nam.jpg"
+            "thumbnail": "/uploads/com-ga-luoc-hai-nam.jpg",
+            "isAvailable": true
         },
         {
             "id": 2,
             "name": "Cơm gà quay cánh",
             "price": 65000,
-            "thumbnail": "/uploads/com-ga-quay-canh.jpg"
+            "thumbnail": "/uploads/com-ga-quay-canh.jpg",
+            "isAvailable": true
         },
         {
             "id": 3,
             "name": "Cơm xá xíu",
             "price": 59000,
-            "thumbnail": "/uploads/com-xa-xiu.jpg"
+            "thumbnail": "/uploads/com-xa-xiu.jpg",
+            "isAvailable": true
         },
         {
             "id": 4,
             "name": "Cơm thêm",
             "price": 12000,
-            "thumbnail": "/uploads/com-them.jpg"
+            "thumbnail": "/uploads/com-them.jpg",
+            "isAvailable": true
         },
         {
             "id": 5,
             "name": "Cơm phá lấu",
             "price": 60000,
-            "thumbnail": "/uploads/com-pha-lau.jpg"
+            "thumbnail": "/uploads/com-pha-lau.jpg",
+            "isAvailable": true
         }
     ],
     "porridge": [
@@ -166,13 +192,15 @@
             "id": 1,
             "name": "Cháo tôm trứng bắc thảo",
             "price": 55000,
-            "thumbnail": "/uploads/chao-tom-trung-bac-thao.jpg"
+            "thumbnail": "/uploads/chao-tom-trung-bac-thao.jpg",
+            "isAvailable": true
         },
         {
             "id": 2,
             "name": "Cháo gà trứng bắc thảo",
             "price": 55000,
-            "thumbnail": "/uploads/chao-ga-trung-bac-thao.jpg"
+            "thumbnail": "/uploads/chao-ga-trung-bac-thao.jpg",
+            "isAvailable": true
         }
     ],
     "drink": [
@@ -180,61 +208,71 @@
             "id": 1,
             "name": "Trà bông cúc",
             "price": 18000,
-            "thumbnail": "/uploads/tra-bong-cuc.jpg"
+            "thumbnail": "/uploads/tra-bong-cuc.jpg",
+            "isAvailable": true
         },
         {
             "id": 2,
             "name": "Chanh dây",
             "price": 18000,
-            "thumbnail": "/uploads/chanh-day.jpg"
+            "thumbnail": "/uploads/chanh-day.jpg",
+            "isAvailable": true
         },
         {
             "id": 3,
             "name": "Trà tắc chanh dây",
             "price": 28000,
-            "thumbnail": "/uploads/tra-tac-chanh-day.jpg"
+            "thumbnail": "/uploads/tra-tac-chanh-day.jpg",
+            "isAvailable": true
         },
         {
             "id": 4,
             "name": "Chanh tươi",
             "price": 18000,
-            "thumbnail": "/uploads/chanh-tuoi.jpg"
+            "thumbnail": "/uploads/chanh-tuoi.jpg",
+            "isAvailable": true
         },
         {
             "id": 5,
             "name": "Coca",
             "price": 15000,
-            "thumbnail": "/uploads/coca.jpg"
+            "thumbnail": "/uploads/coca.jpg",
+            "isAvailable": true
         },
         {
             "id": 6,
             "name": "Trà sữa trân châu",
             "price": 28000,
-            "thumbnail": "/uploads/tra-sua-tran-chau.jpg"
+            "thumbnail": "/uploads/tra-sua-tran-chau.jpg",
+            "isAvailable": true
         },
         {
             "id": 7,
             "name": "Soda dâu",
             "price": 25000,
-            "thumbnail": "/uploads/soda-dau.jpg"
+            "thumbnail": "/uploads/soda-dau.jpg",
+            "isAvailable": true
         },
         {
             "id": 8,
             "name": "Sprite",
             "price": 15000,
-            "thumbnail": "/uploads/sprite.jpg"
+            "thumbnail": "/uploads/sprite.jpg",
+            "isAvailable": true
         },
         {
             "id": 9,
             "name": "Soda đào",
             "price": 25000,
-            "thumbnail": "/uploads/soda-dao.jpg"
+            "thumbnail": "/uploads/soda-dao.jpg",
+            "isAvailable": true
         },
         {
             "id": 10,
             "name": "Nước suối",
             "price": 10000,
-            "thumbnail": "/uploads/nuoc-suoi.jpg"
+            "thumbnail": "/uploads/nuoc-suoi.jpg",
+            "isAvailable": true
         }
     ]
 }
