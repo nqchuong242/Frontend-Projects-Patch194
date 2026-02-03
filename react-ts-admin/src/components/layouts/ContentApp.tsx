@@ -5,10 +5,10 @@ const { Content } = Layout;
 
 const ContentApp = () => {
     return (
-        <Content className="content" style={{ margin: "24px 16px 0", overflow: "initial" }}>
+        <Content className="content" style={{ margin: "10px 10px 0", overflow: "initial" }}>
             <div className="outlet"
                 style={{
-                    padding: 24,
+                    padding: 15,
                     background: "#fff",
                     minHeight: 360
                 }}
