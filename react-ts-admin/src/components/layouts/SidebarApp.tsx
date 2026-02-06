@@ -25,9 +25,9 @@ const SidebarApp = () => {
             label: <NavLink to="/products">Món ăn</NavLink>
         },
         {
-            key: "/tables",
+            key: "/table-orders",
             icon: <TableOutlined />,
-            label: <NavLink to="/tables">Bàn & Order</NavLink>
+            label: <NavLink to="/table-orders">Bàn & Order</NavLink>
         },
         {
             key: "/reports",

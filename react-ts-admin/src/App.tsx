@@ -5,9 +5,10 @@ import DefaultLayout from './components/layouts/DefaultLayout';
 import DashBoardPage from './modules/dashboard/DashBoardPage';
 import NotFoundPage from './modules/notfound/NotFoundPage';
 import ProductsPage from './modules/products/ProductsPage';
-import TablesPage from './modules/tables/TablesPage';
+
 import ReportsPage from './modules/reports/ReportsPage';
 import SettingsPage from './modules/settings/SettingsPage';
+import TableOrdersPage from './modules/table-order/TableOrdersPage';
 
 
 // Create a client
@@ -23,7 +24,7 @@ function App() {
               <Route index element={<Navigate to="/dashboard" />} />
               <Route path="/dashboard" element={<DashBoardPage />} />
               <Route path="/products" element={<ProductsPage />} />
-              <Route path="/tables" element={<TablesPage />} />
+              <Route path="/table-orders" element={<TableOrdersPage />} />
               <Route path="/reports" element={<ReportsPage />} />
               <Route path="/settings" element={<SettingsPage />} />
 
