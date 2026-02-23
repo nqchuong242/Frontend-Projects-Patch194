@@ -1,11 +1,15 @@
 import { Tag } from "antd";
+import { useTableCount } from "../../../store/useTableCount";
 
 const TablesList = ({
-  onModalTableOrders
+  onModalTableOrders,
 }:{
-  onModalTableOrders: ()=>void
+  onModalTableOrders: ()=>void;
 }) => {
-  const fakeData = Array.from({ length: 20 }).map((_, i) => ({
+
+  const {tableCount} = useTableCount()
+
+  const fakeData = Array.from({ length: tableCount }).map((_, i) => ({
     id: i + 1,
     time: "18:30",
     total: i % 3 === 0 ? 0 : (i + 1) * 50000, //chia hết cho 3 thì bằng 0

@@ -59,7 +59,7 @@ const ProductsList = ({
       title: <span style={{ fontSize: 18, fontWeight: 700 }}>Giá</span>,
       dataIndex: 'price',
       key: 'price',
-      render: (text) => <strong>{text}</strong>,
+      render: (p) => <strong>{p.toLocaleString()} đ</strong>,
       onCell: () => ({
         style: { width: 120 }
       })

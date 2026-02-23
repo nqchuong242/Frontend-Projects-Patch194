@@ -63,9 +63,9 @@ const TableOrders = ({
     };
 
     //tính tổng tiền
-    const totalMoney = data.reduce((sum, item) => {
+    const totalMoney = data.reduce((sum, item) => { //reduce = gộp nhiều phần tử trong mảng thành 1 giá trị duy nhất
         return sum + item.price * item.quantity;
-    }, 0);
+    }, 0); //Số 0 là giá trị khởi tạo của sum
 
 
     const columns: TableColumnsType<DataType> = [
@@ -145,6 +145,11 @@ const TableOrders = ({
     const offModalPay = () => {
         setIsModalPayOpen(false);
     };
+
+
+
+
+
     return (
         <Modal className='modal-table-orders'
             width={700}

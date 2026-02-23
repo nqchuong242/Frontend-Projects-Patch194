@@ -22,13 +22,16 @@ const TableOrdersPage = () => {
     >
       <title>Bàn & Order</title>
       
-      <TablesList onModalTableOrders={onModalTableOrders} />
+      <TablesList 
+        onModalTableOrders={onModalTableOrders} 
+      />
 
       <TableOrders
         isModalOpen={isModalOpen}
         isModalOk={offModalTableOrders}
         isModalCancel={offModalTableOrders}
       />
+
     </Card>
   )
 }
