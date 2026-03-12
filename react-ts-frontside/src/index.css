@@ -1,0 +1,78 @@
+/* index.css */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
+
+@import "tailwindcss";
+
+
+/* ===== GLOBAL RESET ===== */
+html,
+body {
+  @apply antialiased;
+  /* Performance optimization for smooth 120fps */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+* {
+  /* Enable GPU acceleration */
+  will-change: auto;
+}
+
+/* Optimize transitions and animations */
+button,
+.ant-btn,
+.transition-shadow {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ===== SCROLLBAR (iPad rất đẹp) ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+/* ===== INPUT / BUTTON DEFAULT ===== */
+button {
+  @apply transition active:scale-95;
+}
+
+input,
+select {
+  @apply outline-none;
+}
+
+/* ===== IMAGE OPTIMIZATION ===== */
+img {
+  /* Prevent jank during image loading */
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+/* ===== CONTAIN LAYOUT (paint performance) ===== */
+.ant-card {
+  contain: layout style paint;
+}
+
+.ant-row {
+  contain: layout;
+}
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== HOVER STATES (minimal repaints) ===== */
+.ant-btn:hover {
+  transform: translateZ(0);
+}

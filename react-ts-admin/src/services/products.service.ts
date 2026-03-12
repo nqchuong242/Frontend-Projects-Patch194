@@ -49,7 +49,7 @@ export const updateProduct = async ({ category, id, product }: { category: strin
     const list = data[category];
 
     const index = list.findIndex((p: any) => p.id === id) //tìm vị trí trong mảng
-    if (index === -1){console.log('<<=== 🚀Không tìm thấy sản phẩm ===>>')}
+    if (index === -1) { console.log('<<=== 🚀Không tìm thấy sản phẩm ===>>') }
     /**findIndex() duyệt mảng và:
     Nếu tìm thấy phần tử thỏa điều kiện → trả về vị trí (index)
     Nếu không tìm thấy → trả về -1 */
@@ -58,7 +58,7 @@ export const updateProduct = async ({ category, id, product }: { category: strin
 
     //Vì là database thô nên dùng put để cập nhật toàn bộ database
     await apiClient.put("/products", data);
-    
+
 };
 
 
@@ -69,7 +69,8 @@ export const getProductById = async ({ category, id }: { category: string, id: n
 
     //Chỉ giữ những sản phẩm là id nhập vào của mãng category 
     const product = data[category].find((p: any) => p.id === id);
-    if(!product){console.log('<<=== 🚀 Không tìm thấy sản phẩm  ===>>')}
+    if (!product) { console.log('<<=== 🚀 Không tìm thấy sản phẩm  ===>>') }
 
     return product
-}
+};
+

@@ -96,6 +96,7 @@ const ProductAdd = ({
                     name: "",
                     price: 0,
                     thumbnail: "uploads/hinh-anh-mon-an.png",
+                    isBestSeller: false,
                     isAvailable: true,
                 }}
                 onFinish={onFinish}
@@ -139,6 +140,16 @@ const ProductAdd = ({
                     >
                         <Button>Chọn ảnh</Button>
                     </Upload>
+
+                    <Form.Item
+                        label="Món bán chạy"
+                        name="isBestSeller"
+                    >
+                        <Select>
+                            <Select.Option value={true}>⭐⭐⭐</Select.Option>
+                            <Select.Option value={false}>☆</Select.Option>
+                        </Select>
+                    </Form.Item>
 
                     <Form.Item
                         label="Tình trạng món"

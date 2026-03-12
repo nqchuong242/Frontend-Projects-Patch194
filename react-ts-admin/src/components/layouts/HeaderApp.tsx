@@ -1,9 +1,13 @@
 import { LogoutOutlined, UserOutlined } from "@ant-design/icons";
 import { Layout } from "antd";
+import { useAuthStore } from "../../store/useAuthStore";
 
 const { Header } = Layout;
 
 const HeaderApp = () => {
+
+  const { user, logout } = useAuthStore((state) => state);
+
   return (
     <Header className="header"
       style={{
@@ -27,7 +31,7 @@ const HeaderApp = () => {
       >
         {/* User icon */}
         <UserOutlined />
-        <span>Admin</span>
+        <span>{user?.username}</span>
       </div>
 
       {/* Logout button */}
@@ -41,12 +45,13 @@ const HeaderApp = () => {
           cursor: "pointer",
           color: "#ff4d4f",
         }}
+        onClick={() => logout()}
       >
         {/* Logout icon */}
         <LogoutOutlined />
         <span>Logout</span>
       </div>
-      
+
     </Header>
   )
 }

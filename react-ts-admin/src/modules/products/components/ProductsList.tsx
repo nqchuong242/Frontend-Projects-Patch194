@@ -59,7 +59,7 @@ const ProductsList = ({
       title: <span style={{ fontSize: 18, fontWeight: 700 }}>Giá</span>,
       dataIndex: 'price',
       key: 'price',
-      render: (p) => <strong>{p.toLocaleString()} đ</strong>,
+      render: (p) => <strong>{p.toLocaleString()} đ</strong>, //chuyển sang string cho đẹp
       onCell: () => ({
         style: { width: 120 }
       })
@@ -72,6 +72,18 @@ const ProductsList = ({
         <Tag color={isAvailable ? "green" : "red"}>
           {isAvailable ? "CÒN MÓN" : "HẾT MÓN"}
         </Tag>
+      ),
+      onCell: () => ({
+        style: { width: 120 }
+      })
+    },
+    {
+      title: <span style={{ fontSize: 18, fontWeight: 700 }}>Món Hot</span>,
+      dataIndex: 'isBestSeller',
+      key: 'isBestSeller',
+      align: "center",
+      render: (isBestSeller: boolean) => (
+        <p>{isBestSeller ? "⭐" : "☆"}</p>
       ),
       onCell: () => ({
         style: { width: 120 }

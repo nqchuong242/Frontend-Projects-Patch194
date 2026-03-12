@@ -9,6 +9,8 @@ import ProductsPage from './modules/products/ProductsPage';
 import ReportsPage from './modules/reports/ReportsPage';
 import SettingsPage from './modules/settings/SettingsPage';
 import TableOrdersPage from './modules/table-order/TableOrdersPage';
+import EmptyLayout from './components/layouts/EmptyLayout';
+import LoginPage from './modules/auth/LoginPage';
 
 
 // Create a client
@@ -31,11 +33,12 @@ function App() {
               
           </Route>
 
-          {/*NO LAYOUT *
+
+          {/* NO LAYOUT */}
           <Route path="/" element={<EmptyLayout />}>
               <Route path="/login" element={<LoginPage />} />
           </Route> 
-          */}
+         
 
           {/* NOT FOUND */}
           <Route path="*" element={<NotFoundPage />} />

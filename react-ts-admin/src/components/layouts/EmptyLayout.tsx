@@ -1,7 +1,10 @@
+import { Outlet } from "react-router"
 
 const EmptyLayout = () => {
   return (
-    <div>EmptyLayout</div>
+    <>
+    <Outlet/>
+    </>
   )
 }
 

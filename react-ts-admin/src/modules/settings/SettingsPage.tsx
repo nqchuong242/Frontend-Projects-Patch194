@@ -1,6 +1,7 @@
 import { Card, Form, InputNumber, Button, notification } from "antd"
 import { useTableCount } from "../../store/useTableCount";
 
+
 const SettingsPage = () => {
 
   const { tableCount, setTableCount } = useTableCount()

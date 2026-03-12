@@ -32,6 +32,9 @@ importers:
       react-router:
         specifier: ^7.12.0
         version: 7.12.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react-ts-admin:
+        specifier: 'link:'
+        version: 'link:'
       tailwindcss:
         specifier: ^4.1.18
         version: 4.1.18

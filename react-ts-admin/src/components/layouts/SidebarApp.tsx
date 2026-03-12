@@ -7,11 +7,14 @@ import {
     BarChartOutlined,
     SettingOutlined
 } from "@ant-design/icons";
+import { useAuthStore } from "../../store/useAuthStore";
 
 const { Sider } = Layout;
 
 const SidebarApp = () => {
     const location = useLocation();
+
+      const { user } = useAuthStore((state) => state);
 
     const menuItems = [
         {
@@ -20,14 +23,14 @@ const SidebarApp = () => {
             label: <NavLink to="/dashboard">Dashboard</NavLink> // NavLink là 1 element có role click
         },
         {
-            key: "/products",
-            icon: <AppstoreOutlined />,
-            label: <NavLink to="/products">Món ăn</NavLink>
-        },
-        {
             key: "/table-orders",
             icon: <TableOutlined />,
             label: <NavLink to="/table-orders">Bàn & Order</NavLink>
+        },
+        {
+            key: "/products",
+            icon: <AppstoreOutlined />,
+            label: <NavLink to="/products">Món ăn</NavLink>
         },
         {
             key: "/reports",
@@ -47,7 +50,7 @@ const SidebarApp = () => {
             collapsedWidth="80"
             style={{ position: "fixed", left: 0, top: 0, bottom: 0 }}
         >
-            <div className="user"
+            <div className="user uppercase"
                 style={{
                     height: 64,
                     margin: 16,
@@ -62,7 +65,7 @@ const SidebarApp = () => {
                     letterSpacing: 1
                 }}
             >
-                ADMIN
+                {user?.username}
             </div>
 
             <Menu className="menu" //Menu.Item được render thành element có role click

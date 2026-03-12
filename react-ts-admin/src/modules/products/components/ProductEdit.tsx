@@ -28,6 +28,7 @@ const ProductEdit = ({
                 name: product.name ?? "",
                 price: product.price ?? 0,
                 thumbnail: product.thumbnail ?? "",
+                isBestSeller: product.isBestSeller ?? false,
                 isAvailable: product.isAvailable ?? true,
             } as Partial<IProductDTO>);
         } else {
@@ -149,6 +150,16 @@ const ProductEdit = ({
                     >
                         <Button>Chọn ảnh</Button>
                     </Upload>
+
+                    <Form.Item
+                        label="Món bán chạy"
+                        name="isBestSeller"
+                    >
+                        <Select>
+                            <Select.Option value={true}>⭐⭐⭐</Select.Option>
+                            <Select.Option value={false}>☆</Select.Option>
+                        </Select>
+                    </Form.Item>
 
                     <Form.Item
                         label="Tình trạng món"
