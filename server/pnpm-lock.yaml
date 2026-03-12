@@ -14,7 +14,6 @@ importers:
       express:
         specifier: ^5.2.1
         version: 5.2.1
-    devDependencies:
       json-server:
         specifier: 0.17.4
         version: 0.17.4
