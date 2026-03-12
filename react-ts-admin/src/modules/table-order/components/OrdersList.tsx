@@ -1,5 +1,5 @@
 import { CloseSquareOutlined } from '@ant-design/icons';
-import { Modal, Divider, Table, Space, Popconfirm, Button, message } from 'antd';
+import { Modal, Divider, Table, Space, Popconfirm, Button, message, notification } from 'antd';
 import type { TableColumnsType, TableProps } from 'antd';
 import { useEffect, useState } from 'react';
 import type { OrderHistory } from '../../../types/orderHistory.dashboard.type';
@@ -284,6 +284,17 @@ const OrdersList = ({
                         onDeleteOrderList(tableId)
                     }
                     saveOrderHistory(String(tableId), data)
+                    notification.success({
+                      message: 'Thành công',
+                      description: `Thanh toán thành công! Tổng: ${totalMoney.toLocaleString()}đ`,
+                      placement: 'top',
+                      style: {
+                        width: 350,
+                        left: '50%',
+                        transform: 'translateX(0)',
+                        top: 150,
+                      },
+                    });
                 }}
                 onCancel={() => {
                     offModalPay();
